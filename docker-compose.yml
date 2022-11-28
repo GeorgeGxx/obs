@@ -12,9 +12,9 @@ services:
     restart: unless-stopped
     networks:
       - springcloud
-    ### Después de subir el contenedor de mysql8 ejecutas lo siguiente para crear la db y el usuario de zipkin:
-    ### sudo chmod +x /obs/zipkin-mysql/zipkin.sh
-    ### sudo ./zipkin.sh
+    ### Después de subir el contenedor de mysql8 ejecutas de forma MANUAL el zipkin.sh para crear la db y el usuario de zipkin:
+    ### sudo chmod +x zipkin-mysql/zipkin.sh
+    ### sudo ./zipkin-mysql/zipkin.sh
 
   microservicios-rabbitmq39:
     container_name: microservicios-rabbitmq39
